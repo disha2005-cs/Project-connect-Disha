@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+
+        }
+        @media(max-width:800px){
+            .container{
+            grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div><img class="item" src="profile.jpeg" alt="profile"></div>
+    <div><img class="item"src="profile.jpeg" alt="profile"></div>
+    <div><img class="item"src="profile.jpeg" alt="profile"></div>
+    <div><img class="item"src="profile.jpeg" alt="profile"></div>
+    <div><img class="item"src="profile.jpeg" alt="profile"></div>
+    <div><img class="item"src="profile.jpeg" alt="profile"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="logo">
+            <div>DISHA</div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Project</a>
+                <a href="#">Achievement</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h1 class="about">ABOUT ME</h1>
+                <p class="hero-para">Hi 👋 There I'm</p>
+                <h2>Disha</h2>
+                <p class="hero-para"> I enjoy designing and coding projects that solve real-world problems, 
+                         especially those that blend creativity with technology. 
+                         I’m passionate about building solutions that are practical, 
+                         user-friendly, and impactful.
+                </p>
+            </div>
+            <div>
+                <img class="hero-img" src="images/profile.jpeg" alt="disha-profile-pic">
+            </div>
+
+        </section>
+        <section class="skill">
+            <h1>SKILL</h1>
+           <div class="container-1">
+            <div class="box1">
+                <h3>HTML </h3>
+                <p class="paragraph">HTML is a hyper text markup language.it is used to structure our website.</p>
+            </div>
+            <div class="box2">
+                <h3>CSS </h3>
+                <p class="paragraph">CSS is a cascading style sheet.it is used to style our website.</p>
+            </div>
+             <div class="box3">
+                <h3>Javascript</h3>
+                <p class="paragraph">Javascript is considered as programming language.It is used to make page user interactive.</p>
+            </div>
+           </div>
+        </section>
+        <section class="skill">
+            <h1>PROJECT</h1>
+           <div class="container-2">
+            <div class="box4">
+                <h3>ForecastAI</h3>
+                <div class="alignment">
+                <p class="skill-paragraph">An AI demanding forecasting tool for MSMEs
+                   that leverage real time and local time-signals
+                   to reduce deadstocks and maximize profit.</p>
+                <img src="images/forecastai.jpeg" alt="forecastai" class="skill-image">
+                </div>
+            </div>
+            <div class="box5">
+                <h3>on the go ev</h3>
+                <div class="alignment">
+                <p class="skill-paragraph">Proposed sustainable EV model with
+                   regenerative braking to enhance efficiency 
+                   and reduce charging dependency.</p>
+                   <img src="images/on-th-go-ev.jpeg" alt="on-th-go-ev" class="skill-image">
+                   </div>
+            </div>
+            <div class="box6">
+                <h3>Motorized Roller</h3>
+                <div class="alignment">
+                <p class="skill-paragraph">Wearable shoes with integrated brushless 
+                   motors and wireless controls reaching speed 
+                   upto 15km/h while ensuring comfort and safety</p>
+                <img src="images/motorizedroller.jpeg" alt="motorizedroller" class="skill-image">
+                </div>
+            </div>
+           </div>
+        </section>
+        <section>
+            <h2>Contact us</h2>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter yout name here"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="address" placeholder="Enter your mail here"><br>
+                <label for="address">Address</label><br>
+                <textarea id="address" name="address" rows="4" placeholder="Enter yout address here"></textarea><br>
+                <button type="sumbmit">Send</button>
+            </form>
+        </section>
+        <button id="toggleMode">light/dark theme</button>
+        <script src="script.js"></script>
+    </main>
+    
+</body>
+</html>

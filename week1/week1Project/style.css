@@ -1,0 +1,241 @@
+nav{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    display:flex;
+    padding:10px 10px;
+    margin:20px;
+}
+.logo{
+    font-size: 1rem;
+    font-weight:bolder;
+    padding:10px 10px;
+    border-radius: 5px;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    text-align:center;
+    margin-left: 20px;
+    word-spacing: 23px;
+    padding:10px 10px;
+}
+.hero{
+    background-color:blanchedalmond;
+    justify-content: space-between;
+    display:flex;
+    align-items: center; 
+    padding: 10px 10px;
+    border-radius: 5px;
+     margin: 22px;
+}
+.hero-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.hero-para{
+    max-width: 700px;
+    font-size: 2rem;
+
+}
+.about{
+    color:white;
+    background-color:black;
+    border-radius: 5px;
+    border:none;
+    padding:5px;
+    margin:5px;
+    max-width: 200px;
+    text-align: center;
+}
+.skill{
+     background-color:blanchedalmond;
+      padding: 10px 10px;
+    border-radius: 5px;
+     margin: 22px;
+}
+.skill h1{
+     color:white;
+    background-color:black;
+    border-radius: 5px;
+    border:none;
+    padding:5px;
+    margin:5px;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.paragraph{
+    font-size:2rem;
+    max-width:400px;
+}
+.container-1{
+    display:flex;
+    justify-content: space-around;
+
+}
+.container-1 div{
+    border:3px solid black;
+    padding:10px;
+   margin-bottom: 2px;
+}
+.container-1 h3{
+    font-size: 2rem;
+}
+.container-2{
+    display:flex;
+    flex-direction: column;
+   
+
+}
+.container-2 div{
+    border:3px solid black; 
+     justify-content: space-evenly;
+
+
+}
+.container-2 h3{
+    font-size:2rem;
+}
+.skill-paragraph{
+     font-size:2rem;
+    max-width:800px;
+}
+.skill-image{
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+}
+.alignment{
+    display:inline-flex;
+    border:0px;
+}
+nav a:hover{
+    color:green;
+    
+}
+nav a:active{
+    color:red;
+}
+form{
+  background-color: antiquewhite;
+}
+ form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  form input[type="submit"] {
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button{
+      background-color: black;
+      color:white;
+      font-size: larger;
+
+    }
+    button:hover{
+      background-color:red;
+    }
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    padding: 5px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 180px;
+    height: 180px;
+    margin-top: 15px;
+  }
+
+  .hero-para,
+  .paragraph,
+  .skill-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-1 div {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .alignment {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skill-image {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
+/* toggle mode*/
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .hero,
+.dark-mode .skill,
+.dark-mode form {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}

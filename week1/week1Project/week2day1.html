@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week2day1</title>
+    <style>
+        .container{
+            display:flex;
+            gap:20px;
+            flex-wrap: wrap;
+        }
+        .coloumn{
+            border:1px solid;
+            max-width: 300px;
+            background-color: aqua;
+            padding:10px;
+            flex:1;
+
+
+        }
+        @media (max-width:800px) {
+            .container{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="coloumn">
+            <h2> colomn1</h2>
+            <p> hi  uh are seeing coloumn 1</p>
+        </div>
+        <div class="coloumn">
+             <h2> colomn2</h2>
+            <p> hi  uh are seeing coloumn 2</p>
+        </div>
+</div>
+</body>
+</html>
+
